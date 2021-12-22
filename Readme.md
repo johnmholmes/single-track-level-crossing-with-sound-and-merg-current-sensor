@@ -2,9 +2,9 @@
 
 This sketch uses a MERG kit 50 block detector to sense the presence of a locomotive on the stretch of track with the level crossing on it. 
 
-Once it is triggered the bells will sound and the 4 leds will flash. A few seconds later the 2 servos will lower the barrier arms.. once the train leaves the stretch of track the arms will raise and then the sound and leds will stop. Awaiting the next trigger.
+Once it is triggered the bells will sound and the 4 leds will flash. A few seconds later the 2 servos will lower the barrier arms.The sound only plays for a few seconds. once the train leaves the stretch of track the arms will raise and then the sound and leds will stop. Awaiting the next trigger.
 
-The code is a adaptaion of https://rudysarduinoprojects.wordpress.com/2020/09/23/fun-with-arduino-42-railway-crossing-multi-track-two-way/
+The code is a adaptaion of https://rudysarduinoprojects.wordpress.com/2019/03/10/fun-with-arduino-21-railway-crossing-uk/
 
 The code runs on a arduino Nano
 
