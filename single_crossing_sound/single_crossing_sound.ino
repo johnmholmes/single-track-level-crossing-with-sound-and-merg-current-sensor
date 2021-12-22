@@ -43,9 +43,9 @@ Servo gate_servo1;                    // declaes the left gate servo for servo.h
 
 
 void setup() {
-  pinMode(SENSOR1_PIN, INPUT_PULLUP); // setup senesor pin 7 as an input uses the built in resistor
-  pinMode(LED1_PIN, OUTPUT);          // setup led pin 10 as an output
-  pinMode(LED2_PIN, OUTPUT);          // setup led pin 11 as an output
+  pinMode(SENSOR1_PIN, INPUT_PULLUP); // setup senesor pin 8 as an input uses the built in resistor
+  pinMode(LED1_PIN, OUTPUT);          // setup led pin 6 as an output
+  pinMode(LED2_PIN, OUTPUT);          // setup led pin 7 as an output
   pinMode(LED3_PIN, OUTPUT);          // setup led pin 12 as an output
   pinMode(LED4_PIN, OUTPUT);          // setup led pin 13 as an output
   gate_servo.attach(SERVO_PIN);       // setup the right gate servo for pin 4
@@ -67,7 +67,7 @@ void loop() {
       state = 2;
     break;
 
-    case 2:                                 //Sensor 1 Triggered - blinking started
+    case 2:                                 //Sensor 1 Triggered - blinking started and start the sound
       blink_enabled = 1;  //variable set to on 
       myDFPlayer.volume(20);
       myDFPlayer.play(1);
@@ -87,7 +87,7 @@ void loop() {
       state = 5;
     break;
 
-    case 5:                                 // Waiting for the train
+    case 5:                                 // Waiting for the train to leave the block
       if(digitalRead(SENSOR1_PIN) == HIGH) 
       
       state = 6;
